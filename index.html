@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Hello world!</title>
+
+</head>
+<body>
+    <style>
+        * {
+            font-size: 36px;
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            width: 1000px;
+            height: 1000px;
+            margin: 20px auto;
+        }
+        div {
+            text-align: center;
+        }
+        .hidden {
+            opacity: 0;
+            text-align: center;
+            
+        }
+        .main {
+            margin: 0px 0px 20px 0px;
+            cursor: pointer;
+        }
+    </style>
+
+    <div class="main">
+        Hello World!
+    </div>
+    
+    <div class="hidden">
+        And hello Efremov Denis Alexandrovich!
+    </div>
+    <script>
+
+        let hello = document.querySelector('.hidden');
+        let main = document.querySelector('.main');
+
+        main.addEventListener('click', () => {
+            if (hello.classList.contains('hidden')) {
+                hello.classList.remove('hidden')
+            } else {
+                hello.classList.add('hidden')
+            } 
+        });
+
+    </script>
+</body>
+</html>
